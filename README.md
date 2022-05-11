@@ -26,7 +26,7 @@ In the example above, cells `a1:b4` in sheet `Sheet2` each contain text to searc
 
 Select a range of cells in the data where underlining should occur and run the script in the VBA editor of the Excel file.
 
-### Modifying
+### Modifications
 
 To add or change the formatting that should be applied, add or change appropriate lines below this line:
 
