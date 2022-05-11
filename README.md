@@ -40,9 +40,9 @@ See [the following page](https://docs.microsoft.com/en-us/office/vba/api/excel.f
 
 The python script `create_names_csv.py` is somewhat tailored for administrative tasks at the CCS, and maybe also other institutes, but could find broader use.
 
-This script reads a simple two-column text file of member names and outputs a larger variety of name arrangements in csv format, which can be used with a VB script to underline these names in an Excel sheet.
+This script reads a simple two-column text file of member names and outputs a larger variety of name arrangements in csv format, which can be used with the VB script above to underline these names in an Excel sheet.
 
-The two-column text file should be named `member_names.txt` and be located in the same location as the python script. The two-column data is separated by a comma. Left column: kanji/kana name `<Surname> <First name>` (space between surname and first name). Right column: romaji name `<First names> <Surname>` (space between first name and surname). Middle names possible, but only for romaji name.
+The two-column text file should be named `member_names.txt` and be located in the same directory as the python script. The two-column data is separated by a comma. Left column: kanji/kana name `<Surname> <First name>` (space between surname and first name). Right column: romaji name `<First names> <Surname>` (space between first name and surname). Middle names possible, but only for romaji name.
 
 E.g.
 ```txt
@@ -52,5 +52,5 @@ E.g.
 ```
 
 Then run the script and it will output a file called `member_names.csv` which can be imported into an Excel sheet and used for the VB script described above.
-
+When importing the file into Excel, be sure to set the options to delimited, delimted by comma, and the encoding to UTF-8.
 
