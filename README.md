@@ -26,6 +26,16 @@ In the example above, cells `a1:b4` in sheet `Sheet2` each contain text to searc
 
 Select a range of cells in the data where underlining should occur and run the script in the VBA editor of the Excel file.
 
+### Modifying
+
+To add or change the formatting that should be applied, add or change appropriate lines below this line:
+
+```
+cl.Characters(StartPos, TotalLen).Font.Underline = xlUnderlineStyleSingle
+```
+
+See [the following page](https://docs.microsoft.com/en-us/office/vba/api/excel.font(object)) for properties of the `Characters.Font` object.
+
 ## Python helper script to generate variations on name strings
 
 The python script `create_names_csv.py` is somewhat tailored for administrative tasks at the CCS, and maybe also other institutes, but could find broader use.
