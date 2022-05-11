@@ -1,13 +1,13 @@
 # underline-text-in-excel-cells
 
-A VB script to automatically underline sub-strings in a range of Excel cells and a python script (`create_names_csv.py`) to create variations of name strings.
+A VB script (`underline_substrings.vb`) to automatically underline sub-strings in a range of Excel cells and a python script (`create_names_csv.py`) to create variations of name strings.
 
 ## VB script to underline sub-strings Excel cells
 
 In Excel, it is not possible to underline (or change formatting) of a sub-string in a cell with search-and-replace, conditioanl formatting or formulae.
 A workaround is to copy text to a word document do search-and-replace with formatting options, but the VB script in this repository provides a fully programatic one-click solution.
 
-Sometimes, we need to underline specific sub-strings, like names, in an excel data sheet for administrative purposes. This VB script was conceived to automate this arduous task.
+Sometimes, we need to underline specific sub-strings, like names, in an excel data sheet for administrative purposes. The VB script `underline_substrings.vb` was conceived to automate this arduous task.
 
 The VB script can be used not just for names, but for any other strings, and other formatting changes within cells can of course also be performed.
 
