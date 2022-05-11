@@ -20,7 +20,7 @@ Dim NamesVector
 NamesVector = Create_Vector(Sheets("Sheet2").Range("a1:b4"))
 ```
 
-In the example above, cells `a1:b4` in sheet `Sheet2` each contain text that should be underlined.
+In the example above, cells `a1:b4` in sheet `Sheet2` each contain text to search for and underline in the current selection.
 
 ### Execution
 
