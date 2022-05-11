@@ -38,9 +38,9 @@ E.g.
 ```txt
 佐藤 健二, Kenji Sato
 ワーグナー アレックス, Alex Y. Wagner
-フィン ラセル, Fynn Edgar Russel
+フィン ラセル, Finn Edgar Russel
 ```
 
-Then run the script and it will output a file called `members_name.csv` which can be imported into an Excel sheet and used for the VB script described above.
+Then run the script and it will output a file called `member_names.csv` which can be imported into an Excel sheet and used for the VB script described above.
 
 
