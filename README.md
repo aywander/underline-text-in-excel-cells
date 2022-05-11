@@ -1,6 +1,6 @@
 # underline-text-in-excel-cells
 
-A VB script to automatically underline sub-strings in a range of Excel cells and a python script to create variations of name strings.
+A VB script to automatically underline sub-strings in a range of Excel cells and a python script (`create_names_csv.py`) to create variations of name strings.
 
 ## VB script to underline sub-strings Excel cells
 
@@ -28,7 +28,7 @@ Select a range of cells in the data where underlining should occur and run the s
 
 ## Python helper script to generate variations on name strings
 
-This script is tailored specifically for administrative tasks in Japanese research institutions.
+The python script `create_names_csv.py` is somewhat tailored for administrative tasks at the CCS, and maybe also other institutes, but could find broader use.
 
 This script reads a simple two-column text file of member names and outputs a larger variety of name arrangements in csv format, which can be used with a VB script to underline these names in an Excel sheet.
 
