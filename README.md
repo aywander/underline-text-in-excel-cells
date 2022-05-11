@@ -28,7 +28,7 @@ Select a range of cells in the data where underlining should occur and run the s
 
 ### Modifications
 
-To add or change the formatting that should be applied, add or change appropriate lines below this line:
+To change or add formatting that should be applied, change the following line or add appropriate lines below this line:
 
 ```
 cl.Characters(StartPos, TotalLen).Font.Underline = xlUnderlineStyleSingle
