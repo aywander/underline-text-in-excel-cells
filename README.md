@@ -11,7 +11,7 @@ Sometimes, we need to underline specific sub-strings, like names, in an excel da
 
 The VB script can be used not just for names, but for any other strings, and other formatting changes within cells can of course also be performed.
 
-## Preparation
+### Preparation
 
 Adjust the sheet name and range in the VB script to match the cells that contain all the text to search for underlining.
 
@@ -22,7 +22,7 @@ NamesVector = Create_Vector(Sheets("Sheet2").Range("a1:b4"))
 
 In the example above, cells `a1:b4` in sheet `Sheet2` each contain text that should be underlined.
 
-## Execution
+### Execution
 
 Select a range of cells in the data where underlining should occur and run the script in the VBA editor of the Excel file.
 
