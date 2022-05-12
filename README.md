@@ -13,14 +13,14 @@ The VB script can be used not just for names, but for any other strings, and oth
 
 ### Preparation
 
-Adjust the sheet name and range in the VB script to match the cells that contain all the text to search for underlining.
+Adjust the sheet name and range in the VB script to match the cells that contain the sub-strings to search for in a selection for underlining.
 
 ```vb
 Dim NamesVector
 NamesVector = Create_Vector(Sheets("Sheet2").Range("a1:b4"))
 ```
 
-In the example above, cells `a1:b4` in sheet `Sheet2` each contain text to search for and underline in the current selection.
+In the example above, cells `a1:b4` in sheet `Sheet2` each contain sub-strings to search for, which will be underlined in the current selection.
 
 ### Execution
 
