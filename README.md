@@ -46,8 +46,8 @@ The two-column text file should be named `member_names.txt` and be located in th
 
 E.g.
 ```txt
-佐藤 健二, Kenji Sato
-ワーグナー アレックス, Alex Y. Wagner
+佐藤 綾音, Sato Ayane
+スミス ジェニファー , Jennifer V. Smith
 フィン ラセル, Finn Edgar Russel
 ```
 
