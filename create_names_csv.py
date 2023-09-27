@@ -16,12 +16,22 @@
 import re
 import csv
 
+# _______________________________________________________________
+# Set these
+
+f_name_member_names_txt = 'member_names.txt'   # Input
+f_name_member_names_csv = 'member_names.csv'   # Output
+
+# _______________________________________________________________
+#
+
 def create_names_ja(name):
 
     # Last name, First name
     ln, fn = re.split('[ 　]+', name)
 
     return [f'{ln} {fn}', f'{ln}{fn}', f'{ln}　{fn}']
+
 
 def create_names_en(name):
 
@@ -43,6 +53,7 @@ def create_names_en(name):
     else:
         mn = ''
 
+    # TODO: create non-period versions between first names, e.g. "Wagner, A Y"
     # All common combinations. Note there is a space before mn
     return [f'{ln} {fn}', f'{fn} {ln}',
             f'{ln} {fn[0]}.', f'{fn[0]}. {ln}',
@@ -50,15 +61,26 @@ def create_names_en(name):
             f'{ln} {fn}{mn}', f'{ln} {fn[0]}.{mn}',
             f'{ln}, {fn}{mn}', f'{ln}, {fn[0]}.{mn}',
             f'{fn}{mn} {ln}', f'{fn[0]}.{mn} {ln}',
+            f'{ln} {fn[0]}', f'{fn[0]} {ln}',
+            f'{ln}, {fn[0]}', f'{ln} {fn[0]}{mn}',
+            f'{ln}, {fn[0]}{mn}', f'{fn[0]}{mn} {ln}'
             ]
 
-# Read text file of member names
-with open('member_names.txt', 'r') as fh:
-    content = fh.readlines()
-    content = [[ n.strip() for n in c.split(',')] for c in content]
+
+def get_names_from_txt(fname):
+
+    # Read text file of member names
+    with open(fname, 'r') as fh:
+        content = fh.readlines()
+        content = [[ n.strip() for n in c.split(',')] for c in content]
+
+    return content
+
+
+content = get_names_from_txt(f_name_member_names_txt)
 
 # Write csv file
-with open(f'member_names.csv', 'w', newline='') as csv_file:
+with open(f_name_member_names_csv, 'w', newline='') as csv_file:
     for c in content:
 
         print(f'Processing {c[0]} & {c[1]} ...')
