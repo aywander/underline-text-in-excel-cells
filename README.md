@@ -54,3 +54,8 @@ E.g.
 Then run the script and it will output a file called `member_names.csv` which can be imported into an Excel sheet and used for the VB script described above.
 When importing the file into Excel, be sure to set the options to delimited, delimted by comma, and the encoding to UTF-8.
 
+Any options are set inside the script.
+
+## Python helper script to generate text file of names from Theoretical Astrophysics Group members data
+
+This script is only for use with the Theoretical Astrophysics Group members data. The python script `create_names_txt.py` will read the members collection in `_members/` and create the two-column text file required when using `create_names_csv.py`. All options are set inside the script.
