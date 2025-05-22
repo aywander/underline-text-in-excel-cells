@@ -6,10 +6,17 @@ from pathlib import Path
 from ruamel.yaml import YAML
 
 do_selected = False
-selected_positions = False
+selected_positions = True
 
+out_file_name = 'member_names_phd.txt'
 positions_selection = ['professor', 'associate_professor', 'lecturer', 'assistant_professor',
                        'postdoc', 'postdoc_student']
+
+# out_file_name = 'member_names_phd.txt'
+# positions_selection = ['d6', 'd5', 'd4', 'd3', 'd2', 'd1']
+
+# out_file_name = 'member_names_mas.txt'
+# positions_selection = ['m3', 'm2', 'm1']
 
 members_dir = Path('/Users/ayw/dev/TheoreticalAstrophysicsGroup/_members')
 
@@ -33,7 +40,7 @@ yaml = YAML()
 yaml.preserve_quotes = True
 yaml.allow_duplicate_keys = True
 
-with open('member_names.txt', 'w') as fh:
+with open(out_file_name, 'w') as fh:
 
     # Assume all arguments are filenames
     for fen, fja in zip(files_en, files_ja):
